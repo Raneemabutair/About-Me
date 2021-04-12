@@ -3,7 +3,7 @@
 
 alert ('welcome to my website!');
 
-// eslint-disable-next-line no-unused-vars
+//eslint-disable-next-line no-unused-vars
 let Name = prompt('what is your name?');
 alert('Hello!  ' + Name + '  I am Raneem hope you enjoy this guessing game about me');
 
@@ -18,7 +18,7 @@ if (Travel==='yes') {
 }
 else if (Travel=== 'no') {
   alert('I am afraid you are wrong because I love traveling');
-  //console.log('false answer i love traveling');
+  console.log('false answer i love traveling');
 
 
 }
@@ -32,7 +32,7 @@ if (Time==='yes') {
 }
 else if (Time=== 'no') {
   alert('I am afraid you are wrong because I love night more than the daylight');
-  //console.log('false answer i love tne night');
+  console.log('false answer i love tne night');
 
 
 }
@@ -46,7 +46,7 @@ if (Animals==='yes') {
 }
 else if (Animals=== 'no'){
   alert('I am afraid you are wrong because I love animals they are nice creatures');
-  //console.log('false answer i love animals');}
+  console.log('false answer i love animals');}
 
 
 let Fashion = prompt('Do I love fashion! what do think?! Please answer “yes” or “no”');
@@ -57,7 +57,7 @@ if (Fashion==='yes') {
 }
 else if (Fashion=== 'no'){
   alert('Yes, that’s true I am so basic with my fashion');
- // console.log('true answer i not good with fashion ');}
+  console.log('true answer i not good with fashion ');}
 
 
 
@@ -70,7 +70,8 @@ if (Sport==='yes') {
 }
 else if (Sport=== 'no'){
   alert('That’s true you are right I don’t really understand a lot about football games.');
-  //console.log('true answer i not good with sport ');}
+
+  console.log('true answer i not good with sport ');}
 
 
 alert('Thank you so much '+Name+' for enjoying with me playing this game');
