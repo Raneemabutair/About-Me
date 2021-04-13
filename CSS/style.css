@@ -38,17 +38,39 @@ body { width: 1000px;
       font-size: 25px;
       text-indent: 40px;
       padding: 80px;
-
-
   }
+
+
+  main ul {  padding: 20px;
+  font-size: 25px;
+  color: #270136;
+
+}
+
+
+
+  
 
   ul {    
     padding: 20px;
     font-size: 20px;
     color: #6C3483;
 
+  }
 
+  #firstname {
+    background-color: #1a4966;
+    font-size: 30px;
+    text-align: center;
+    color: azure;
 
+  }
+
+  ol  {
+    
+    font-size: 25px;
+    color: #210c29;
+   
   }
 
   section {

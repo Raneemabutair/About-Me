@@ -1,5 +1,6 @@
 'use strict';
 
+let result = 0;
 
 alert ('welcome to my website!');
 
@@ -13,8 +14,11 @@ alert('OK! lets start <3');
 let Travel = prompt('Do you think I love to travel a lot?! Please answer “yes” or “no”');
 Travel= Travel.toLocaleLowerCase();
 if (Travel==='yes' || Travel === 'y') {
-  alert('You gusset it; I love traveling so much and I traveled a lot');}
+  alert('You gusset it; I love traveling so much and I traveled a lot');
+  result++;
+}
 //console.log('true answer i love traveling');}
+
 
 else if (Travel=== 'no' || Travel === 'n') {
   alert('I am afraid you are wrong because I love traveling');
@@ -30,6 +34,7 @@ let Time = prompt('Do you think I love to the night more than the daylight?! Ple
 Time= Time.toLocaleLowerCase();
 if (Time==='yes' || Time === 'y') {
   alert('Yes, you’re right; I love night more than the daylight specially in summer');
+  result++;
   //console.log('true answer i love tne night');
 }
 else if (Time=== 'no'|| Time === 'n') {
@@ -46,11 +51,12 @@ let Animals = prompt('What about animals do you think I like animals?! Please an
 Animals= Animals.toLocaleLowerCase();
 if (Animals==='yes' || Animals === 'y') {
   alert('That’s true; I love animals so much I even have a cat');
+  result++;
   //console.log('true answer i love animals');
 }
 else if (Animals=== 'no' || Animals === 'n'){
   alert('I am afraid you are wrong because I love animals they are nice creatures');}
-//console.log('false answer i love animals');}
+//console.log('false answer i love animals');
 
 else{
   alert('please enter yes or no');
@@ -61,11 +67,13 @@ let Fashion = prompt('Do I love fashion! what do think?! Please answer “yes”
 Fashion= Fashion.toLocaleLowerCase();
 if (Fashion==='yes' || Fashion === 'y') {
   alert('Actually no!  I am not a big fan of fashion I try to but it’s so hard to follow 😊');
+
   //console.log('false answer i dont love fashion');
 }
 else if (Fashion=== 'no' || Fashion === 'n'){
-  alert('Yes, that’s true I am so basic with my fashion');}
-//console.log('true answer i not good with fashion ');}
+  alert('Yes, that’s true I am so basic with my fashion');
+  result++;}
+//console.log('true answer i not good with fashion ');
 
 else{
   alert('please enter yes or no');
@@ -76,16 +84,72 @@ let Sport  = prompt('What about sport do you think I like football games?! Pleas
 Sport= Sport.toLocaleLowerCase();
 if (Sport==='yes' || Sport === 'y') {
   alert('That’s not true actually LOL   I try my best to watch it but I can’t  ');
+
   //console.log('false answer i dont love sport');
 }
 else if (Sport=== 'no' || Sport === 'n'){
-  alert('That’s true you are right I don’t really understand a lot about football games.');}
+  alert('That’s true you are right I don’t really understand a lot about football games.');
+  result++;}
 
-//console.log('true answer i not good with sport ');}
+//console.log('true answer i not good with sport ');
 
 else{
   alert('please enter yes or no');
 }
 
+const myAge=27;
 
-alert('Thank you so much '+Name+' for enjoying with me playing this game');
+let guessAge = prompt( 'Can you guess how old i am!? please type numbers only' );
+console.log( guessAge );
+
+for( let i = 4; i > 0 ; i-- ){
+  if( guessAge <5 ){
+    guessAge = prompt( 'mmmmm! not really this so young lol' );
+    console.log( guessAge );
+  }
+  else if ( guessAge >40 ){
+    guessAge = prompt( 'still no i am younger than this' );
+    console.log( guessAge );
+  }
+  else if ( guessAge >= 20 && guessAge <= 26 ) {
+    guessAge = prompt( 'you are so close');
+    console.log( guessAge );
+  }
+  else if ( guessAge >= 6 && guessAge <= 19 ) {
+    guessAge = prompt( 'Nope , Oldar than this');
+    console.log( guessAge );
+  }
+  if (guessAge === myAge)
+  {alert('AMAZIIING! good job yes i am 27 years old <3');
+    // eslint-disable-next-line no-undef
+    result++;
+    break;
+  }
+}
+
+
+
+let Moviestype = prompt( 'Can you guess my favorite type of movies',
+  'Action, Romance, Horror, Drama, Romance comedy, Fantasy, Asian' ).
+  toLowerCase();
+
+let mytype = ['Romance comedy','Fantasy' ];
+
+for( let i = 1; i < 6; i++ ){
+
+  if( Moviestype === mytype[4] || Moviestype === mytype[5] ){
+    alert( 'Amazing you guesst it i love to watch ' + mytype[4] +'  and  '+ mytype[5] );
+    // eslint-disable-next-line no-undef
+    result++;
+    break;
+  }
+
+
+
+  if( Moviestype !== mytype[4] && Moviestype !== mytype[5] ){
+    Moviestype = prompt( 'I am afraid its wrong please try again')
+      .toLowerCase();
+    console.log( mytype );
+  }
+}
+alert('Thank you so much ' + Name + 'you got ' + result + '/7, good for you');
