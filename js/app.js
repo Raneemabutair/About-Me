@@ -119,7 +119,9 @@ for( let i = 4; i > 0 ; i-- ){
     guessAge = prompt( 'Nope , Oldar than this');
     console.log( guessAge );
   }
-  if (guessAge === myAge)
+
+
+  if (Number(guessAge) === myAge)
   {alert('AMAZIIING! good job yes i am 27 years old <3');
     // eslint-disable-next-line no-undef
     result++;
@@ -127,29 +129,30 @@ for( let i = 4; i > 0 ; i-- ){
   }
 }
 
-
-
 let Moviestype = prompt( 'Can you guess my favorite type of movies',
   'Action, Romance, Horror, Drama, Romance comedy, Fantasy, Asian' ).
   toLowerCase();
 
-let mytype = ['Romance comedy','Fantasy' ];
+let mytype = ['romance comedy', 'fantasy',];
+let usrname=true;
+for( let i = 0; i < 6; i++ ){
+  for(let j=0; j < mytype.length ; j++ ) {
+    if( Moviestype === mytype[j] ){
+      alert( 'Amazing you guesst it i love to watch ' + mytype[0] +'  and  '+ mytype[1] );
+      // eslint-disable-next-line no-undef
+      result++;
+      i=100;
+      usrname=false;
+      break;
+    }
 
-for( let i = 1; i < 6; i++ ){
-
-  if( Moviestype === mytype[4] || Moviestype === mytype[5] ){
-    alert( 'Amazing you guesst it i love to watch ' + mytype[4] +'  and  '+ mytype[5] );
-    // eslint-disable-next-line no-undef
-    result++;
-    break;
   }
 
-
-
-  if( Moviestype !== mytype[4] && Moviestype !== mytype[5] ){
+  if( usrname) {
     Moviestype = prompt( 'I am afraid its wrong please try again')
       .toLowerCase();
     console.log( mytype );
   }
+
 }
 alert('Thank you so much ' + Name + 'you got ' + result + '/7, good for you');
