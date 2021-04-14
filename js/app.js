@@ -11,7 +11,8 @@ alert('Hello!  ' + Name + '  I am Raneem hope you enjoy this guessing game about
 
 alert('OK! lets start <3');
 
-let Travel = prompt('Do you think I love to travel a lot?! Please answer “yes” or “no”');
+function Traveling (){
+  let Travel = prompt('Do you think I love to travel a lot?! Please answer “yes” or “no”');
 Travel= Travel.toLocaleLowerCase();
 if (Travel==='yes' || Travel === 'y') {
   alert('You gusset it; I love traveling so much and I traveled a lot');
@@ -27,40 +28,50 @@ else if (Travel=== 'no' || Travel === 'n') {
 else{
   alert('please enter yes or no');
 }
-
-
-
-let Time = prompt('Do you think I love to the night more than the daylight?! Please answer “yes” or “no”');
-Time= Time.toLocaleLowerCase();
-if (Time==='yes' || Time === 'y') {
-  alert('Yes, you’re right; I love night more than the daylight specially in summer');
-  result++;
-  //console.log('true answer i love tne night');
-}
-else if (Time=== 'no'|| Time === 'n') {
-  alert('I am afraid you are wrong because I love night more than the daylight');
-  //console.log('false answer i love tne night');
-}
-else{
-  alert('please enter yes or no');
 }
 
+Traveling();
 
 
-let Animals = prompt('What about animals do you think I like animals?! Please answer “yes” or “no”');
-Animals= Animals.toLocaleLowerCase();
-if (Animals==='yes' || Animals === 'y') {
-  alert('That’s true; I love animals so much I even have a cat');
-  result++;
-  //console.log('true answer i love animals');
+function dayTime (){
+  let Time = prompt('Do you think I love to the night more than the daylight?! Please answer “yes” or “no”');
+  Time= Time.toLocaleLowerCase();
+  if (Time==='yes' || Time === 'y') {
+    alert('Yes, you’re right; I love night more than the daylight specially in summer');
+    result++;
+    //console.log('true answer i love tne night');
+  }
+  else if (Time=== 'no'|| Time === 'n') {
+    alert('I am afraid you are wrong because I love night more than the daylight');
+    //console.log('false answer i love tne night');
+  }
+  else{
+    alert('please enter yes or no');
+  }
+  
 }
-else if (Animals=== 'no' || Animals === 'n'){
-  alert('I am afraid you are wrong because I love animals they are nice creatures');}
-//console.log('false answer i love animals');
+dayTime ();
 
-else{
-  alert('please enter yes or no');
+
+
+function aboutAnimals (){
+  let Animals = prompt('What about animals do you think I like animals?! Please answer “yes” or “no”');
+  Animals= Animals.toLocaleLowerCase();
+  if (Animals==='yes' || Animals === 'y') {
+    alert('That’s true; I love asnimals so much I even have a cat');
+    result++;
+    //console.log('true answer i love animals');
+  }
+  else if (Animals=== 'no' || Animals === 'n'){
+    alert('I am afraid you are wrong because I love animals they are nice creatures');}
+  //console.log('false answer i love animals');
+  
+  else{
+    alert('please enter yes or no');
+  }
 }
+aboutAnimals ();
+
 
 
 let Fashion = prompt('Do I love fashion! what do think?! Please answer “yes” or “no”');
